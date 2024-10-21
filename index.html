@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./netflix-3.svg" type="image/x-icon" />
+
+</head>
+
+<body>
+    <header>
+        <h1>Movie Search App</h1>
+        <nav>
+            <ul id="favoritesList">
+                <!-- Favorite movies will be listed here -->
+                Favorite
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="search">
+            <input type="text" id="searchInput" placeholder="Search for a movie...">
+            <button id="searchButton">Search</button>
+        </section>
+        <section id="results">
+            <!-- Movie results will be displayed here -->
+        </section>
+
+    </main>
+    <div id="detailsModal" class="modal">
+        <div class="modal-content" id="modalContent">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <!-- Movie details will be displayed here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
