@@ -1,16 +1,22 @@
 /* General styles */
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+  background-image: url(istockphoto-1052177016-1024x1024.jpg);
+  background-position: fixed;
 }
 
 header {
-  background-color: #333;
+  background-color: #ffbd33;
   color: #fff;
   padding: 10px 0;
   text-align: center;
+  height: 120px;
 }
 
 main {
@@ -83,6 +89,11 @@ main {
 
 .movie button:hover {
   background-color: #555;
+}
+.Favorite {
+  font-size: x-large;
+  margin: 10px;
+  cursor: pointer;
 }
 
 /* Modal styles */
