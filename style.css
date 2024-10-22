@@ -6,13 +6,13 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
   background-image: url(istockphoto-1052177016-1024x1024.jpg);
   background-position: fixed;
 }
 
 header {
-  background-color: #ffbd33;
+  background-image: linear-gradient(to right, #870000, #190a05);
+
   color: #fff;
   padding: 10px 0;
   text-align: center;
@@ -29,8 +29,8 @@ main {
 }
 
 #search input {
-  padding: 10px;
-  width: 300px;
+  padding: 12px;
+  width: 350px;
   margin-right: 10px;
 }
 
@@ -55,7 +55,7 @@ main {
 }
 
 .movie {
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
   border: 1px solid #ddd;
   padding: 10px;
   width: 200px;
@@ -71,11 +71,13 @@ main {
 .movie h3 {
   font-size: 18px;
   margin: 10px 0;
+  color: #fff;
 }
 
 .movie p {
   font-size: 14px;
   margin: 5px 0;
+  color: #fff;
 }
 
 .movie button {
@@ -161,6 +163,14 @@ main {
 .close:focus {
   color: black;
   text-decoration: none;
+}
+footer {
+  height: 120px;
+  background-image: linear-gradient(to right, #870000, #190a05);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Responsive styles */
