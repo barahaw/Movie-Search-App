@@ -7,6 +7,7 @@
     <title>Movie Search App</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./netflix-3.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -14,10 +15,11 @@
     <header>
         <h1>Movie Search App</h1>
         <nav>
-            <ul id="favoritesList" class="Favorite">
-                <!-- Favorite movies will be listed here -->
-                Favorite
-            </ul>
+            <nav>
+                <ul id="favoritesList" class="Favorite">
+                    <li><a href="favorites.html">Favorites</a></li>
+                </ul>
+            </nav>
         </nav>
     </header>
     <main>
@@ -36,8 +38,17 @@
             <!-- Movie details will be displayed here -->
         </div>
     </div>
-    <footer>
+    <footer id="footer">
+        <div class="content">
+            <div class="desc">
+                <p>&copy; made with love By The Brainiacs .</p>
 
+            </div>
+            <div class="social-icons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>

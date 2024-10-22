@@ -74,6 +74,7 @@ const displayResults = (movies) => {
 const displayError = (message) => {
   const resultsSection = document.getElementById("results");
   resultsSection.innerHTML = `<p class="error">${message}</p>`;
+  resultsSection.style.fontSize = "20px";
 };
 
 const showDetails = (movieId) => {
@@ -121,4 +122,15 @@ const fetchMovieDetails = (movieId) => {
 const getRandomMovies = (movies, count) => {
   const shuffled = movies.sort(() => 0.5 - Math.random());
   return shuffled.slice(0, count);
+};
+const addToFavorites = (movieId) => {
+  const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+
+  if (!favorites.includes(movieId)) {
+    favorites.push(movieId);
+    localStorage.setItem("favorites", JSON.stringify(favorites));
+    alert("Movie added to favorites!");
+  } else {
+    alert("Movie is already in favorites!");
+  }
 };
