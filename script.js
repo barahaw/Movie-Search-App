@@ -9,6 +9,23 @@ document.getElementById("searchButton").addEventListener("click", () => {
   searchMovies(query);
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  fetch(API_URL)
+    .then((response) => response.json())
+    .then((data) => {
+      if (data.results.length > 0) {
+        const randomMovies = getRandomMovies(data.results, 5); // Get 5 random movies
+        displayResults(randomMovies);
+      } else {
+        displayError("No movies found.");
+      }
+    })
+    .catch((error) => {
+      console.error("Error fetching data:", error);
+      displayError("An error occurred while fetching data.");
+    });
+});
+
 const searchMovies = (query) => {
   const url = `${SEARCH_URL}&query=${encodeURIComponent(query)}`;
 
@@ -99,4 +116,9 @@ const fetchMovieDetails = (movieId) => {
       data.cast = data.credits.cast.map((actor) => actor.name).join(", ");
       return data;
     });
+};
+
+const getRandomMovies = (movies, count) => {
+  const shuffled = movies.sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, count);
 };
