@@ -6,9 +6,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url(istockphoto-1052177016-1024x1024.jpg);
-  background-size: contain;
-  background-attachment: fixed;
+  background-color: #000000;
 }
 
 header {
@@ -62,7 +60,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #89898996;
   border: 1px solid #ddd;
   padding: 10px;
   width: 200px;
