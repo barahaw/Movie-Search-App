@@ -67,7 +67,9 @@ main {
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
+.movie:hover {
+  transform: translateY(-5px) scale(1.05);
+}
 .movie img {
   width: 100%;
   height: auto;
