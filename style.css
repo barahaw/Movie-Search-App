@@ -17,7 +17,7 @@ header {
   color: #fff;
   padding: 10px 0;
   text-align: center;
-  height: 120px;
+  height: 125px;
 }
 
 main {
@@ -228,7 +228,7 @@ nav a {
 
 nav a:hover {
   background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
-  border-radius: 5px; /* Rounded corners on hover */
+  border-radius: 4px; /* Rounded corners on hover */
 }
 
 /* Responsive styles */
