@@ -68,7 +68,7 @@ main {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .movie:hover {
-  transform: translateY(-5px) scale(1.05);
+  transform: translateY(-2px) scale(1.02);
 }
 .movie img {
   width: 100%;
@@ -89,21 +89,26 @@ main {
 
 .movie button {
   padding: 5px 10px;
-  background-color: #333;
+  background-color: #71797e;
   color: #fff;
   border: none;
   cursor: pointer;
-  margin-top: 10px;
+  border-radius: 15px;
+  padding: 12px;
+  margin-top: 14px;
 }
 
 .movie button:hover {
-  background-color: #555;
+  background-color: #708090;
 }
 
 .Favorite {
-  font-size: x-large;
+  width: 120px;
   margin: 10px;
   cursor: pointer;
+}
+.Favorite img {
+  width: 50px;
 }
 
 /* Modal styles */
@@ -241,11 +246,11 @@ nav a {
   color: #fff;
   font-size: 20px;
   margin: 0 15px;
-  padding: 10px 15px;
+  padding: 15px;
   transition: background-color 0.3s;
 }
 
-nav a:hover {
+.home:hover {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 4px;
 }
