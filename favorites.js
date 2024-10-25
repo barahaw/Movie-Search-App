@@ -53,5 +53,5 @@ const removeFromFavorites = (movieId) => {
 const displayError = (message) => {
   const favoritesResults = document.getElementById("favoritesResults");
   favoritesResults.innerHTML = `<p class="error">${message}</p>`;
-  resultsSection.style.color = "white";
+  favoritesResults.style.color = "white";
 };
