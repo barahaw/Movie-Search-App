@@ -74,6 +74,7 @@ const displayResults = (movies) => {
 const displayError = (message) => {
   const resultsSection = document.getElementById("results");
   resultsSection.innerHTML = `<p class="error">${message}</p>`;
+  resultsSection.style.color = "white";
   resultsSection.style.fontSize = "20px";
 };
 

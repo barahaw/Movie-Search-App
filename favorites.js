@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
   if (favorites.length === 0) {
-    displayError("No favorite movies found.");
+    displayError("oops No favorite movies found in your Favorites List.");
   } else {
     favorites.forEach((movieId) => {
       fetchMovieDetails(movieId).then((movie) => {
@@ -53,4 +53,5 @@ const removeFromFavorites = (movieId) => {
 const displayError = (message) => {
   const favoritesResults = document.getElementById("favoritesResults");
   favoritesResults.innerHTML = `<p class="error">${message}</p>`;
+  resultsSection.style.color = "white";
 };
