@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((response) => response.json())
     .then((data) => {
       if (data.results.length > 0) {
-        const randomMovies = getRandomMovies(data.results, 15); // Get 5 random movies
+        const randomMovies = getRandomMovies(data.results, 15);
         displayResults(randomMovies);
       } else {
         displayError("No movies found.");
